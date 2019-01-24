@@ -14,6 +14,7 @@
             <div class="well">
                 <h3>Price per melon</h3>
                 <p> {{ display_melon.price_str() }} </p>
+
                 <a class="btn btn-primary" href="/add_to_cart/{{ display_melon.melon_id }}">
                     Add to Cart
                 </a>
@@ -28,6 +29,7 @@
         <ul>
             <li>Melon type: {{ display_melon.melon_type }}</li>
             <li>Color: {{ display_melon.color }}</li>
+            <!-- <li>Melon_ID: {{ display_melon.melon_id}} </li> -->
             {% if display_melon.seedless %}
               <li>Seedless melon</li>
             {% else %}
